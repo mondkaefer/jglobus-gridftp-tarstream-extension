@@ -19,12 +19,6 @@ public class CompressTar implements org.birncommunity.gridftp.tar.TarI {
 
     private Log log = LogFactory.getLog(CompressTar.class);
 
-    public static void main(String[] args) throws Exception {
-
-        CompressTar ct = new CompressTar();
-        ct.tarDirectoryToFile(new File("/tmp/testdir"), new File("/tmp/testfile.tar"));
-    }
-
     public void tarDirectoryToStream(File dir, OutputStream os) throws Exception {
 
         new MethodParameterChecker().verifyNotNull(dir, os);

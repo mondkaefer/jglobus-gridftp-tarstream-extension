@@ -18,12 +18,6 @@ public class CompressUntar implements org.birncommunity.gridftp.tar.UntarI {
 
     private Log log = LogFactory.getLog(CompressUntar.class);
 
-    public static void main(String[] args) throws Exception {
-
-        CompressUntar cut = new CompressUntar();
-        cut.untarFromFile(new File("/tmp/testfile.tar"), new File("/tmp/testdir2"));
-    }
-
     public void untarFromStream(InputStream is, File destDir) throws IOException {
 
         new MethodParameterChecker().verifyNotNull(is, destDir);
