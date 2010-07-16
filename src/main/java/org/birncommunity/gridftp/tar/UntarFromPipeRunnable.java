@@ -13,7 +13,7 @@ public class UntarFromPipeRunnable implements Runnable {
     private String destDir;
     private UntarI untar;
 
-    public UntarFromPipeRunnable(InputStream is, String destDir, UntarI untar) throws Exception {
+    public UntarFromPipeRunnable(InputStream is, String destDir, UntarI untar) {
 
         new MethodParameterChecker().verifyNotNull(destDir, is, untar);
         this.is = is;
