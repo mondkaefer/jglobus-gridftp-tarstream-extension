@@ -13,7 +13,7 @@ public class TarToPipeRunnable implements Runnable {
     private String sourceDir;
     private TarI tar;
 
-    public TarToPipeRunnable(String sourceDir, OutputStream os, TarI tar) throws Exception {
+    public TarToPipeRunnable(String sourceDir, OutputStream os, TarI tar) {
 
         new MethodParameterChecker().verifyNotNull(sourceDir, os, tar);
         this.os = os;
