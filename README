@@ -1,2 +1,3 @@
 Transfer a directory as a tar-stream using the popen-driver enabled Globus GridFTP server.
 Currently only 2-party transfers are supported.
+More information to come...
